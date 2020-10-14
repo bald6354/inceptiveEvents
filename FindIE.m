@@ -1,4 +1,4 @@
-function [ie] = FindIE(idx, ts, multiTriggerWindow, p, ie)
+function [ie] = FindIE(idx, ts, multiTriggerWindow, p)
 
 %Ensure time order
 [idx] = sort(idx);

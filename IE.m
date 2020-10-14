@@ -14,7 +14,7 @@ N = 1:numEvents;
 
 %Inceptive Events
 ie = zeros(1,numEvents);
-ie = accumarray(hasDataIdx,N',size(ie'),@(x) FindIE(x,ts,multiTriggerWindow,p,ie'));
+ie = accumarray(hasDataIdx,N',size(ie'),@(x) FindIE(x,ts,multiTriggerWindow,p));
 ie = ie(~cellfun('isempty',ie));
 
 isIE = false(1,numEvents);
@@ -26,7 +26,7 @@ isIE = isIE';
 
 %Trailing Events
 ie = zeros(1,numEvents);
-ie = accumarray(hasDataIdx,N',size(ie'),@(x) FindTE(x,ts,multiTriggerWindow,p,ie'));
+ie = accumarray(hasDataIdx,N',size(ie'),@(x) FindTE(x,ts,multiTriggerWindow,p));
 ie = ie(~cellfun('isempty',ie));
 
 isTE = false(1,numEvents);

@@ -1,4 +1,4 @@
-function [ie] = FindTE(idx, ts, multiTriggerWindow, p, ie)
+function [ie] = FindTE(idx, ts, multiTriggerWindow, p)
 
 %Ensure time order
 [idx] = sort(idx);
