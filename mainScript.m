@@ -3,7 +3,8 @@ clear, clc
 
 load('sampleData.mat')
 
-multiTriggerWindow = 20e3; %20msec
+%Needs to be in the same units as t, in this example t is in microseconds
+multiTriggerWindow = 20e3; %20e3 = 20msec multiTriggerWindow (this may need to be adjusted to matcht the low-pass filter settings on the camera)
 
 sensorDim = [260 346];
 
